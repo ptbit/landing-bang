@@ -1,9 +1,7 @@
 'use strict';
-// window.onload(validateForm());
 
 function validateForm() {
   const form = document.getElementById('messageForm');
-  console.log(form)
   const nameInput = document.getElementById('nameInput');
   const emailInput = document.getElementById('emailInput');
   const messageInput = document.getElementById('messageInput');
@@ -16,7 +14,6 @@ function validateForm() {
 
   if (isWhitespaceOnly(messageInput.value)) {
     messageInput.value = '';
-    console.log('no valid');
 
     return false;
   }
