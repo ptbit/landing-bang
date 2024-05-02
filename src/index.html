@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/styles.scss" />
   </head>
@@ -35,7 +39,7 @@
 
     <aside class="menu page__menu" id="menu">
       <div class="top-bar menu__top">
-        <a href="./" class="top-bar__logo">
+        <a href="./#menu" class="top-bar__logo">
           <img src="./images/logo.svg" alt="Bang & Olufsen Logo" />
         </a>
 
@@ -221,7 +225,12 @@
       <section id="contact-us" class="main__section contact-us">
         <h2 class="contact-us__title">Contact Us</h2>
         <div class="contact-us__content">
-          <form id="messageForm" class="contact-us__send-form" action="#">
+          <form
+            id="messageForm"
+            class="contact-us__send-form"
+            action="#"
+            onsubmit="this.reset(); return false;"
+          >
             <input
               id="nameInput"
               class="send-form__input input"
